@@ -26,7 +26,7 @@ B/S网络架构从前端到后端都得到简化，都基于统一的应用层�
 
 
 如何发起一个HTTP请求和如何建立一个Socket连接区别不大，只不过outputStream.write写的二进制字节数据格式要符号HTTP，浏览器在建立Socket连接之前，必须根据地址栏中的URL的域名DNS解析出IP地址，在根据这个IP和默认的80端口与远程服务器建立Socket连接，然后浏览器根据这个URL组装成一个get类型的HTTP请求头，通过outputStream.write 发送到目标服务器，服务器等待inputStream.read返回 数据，最后断开这个连接。  
- 
+
 发起一个HTTP请求就是一个建立Socket通信过程
 
 
@@ -50,4 +50,29 @@ I/O问题是整个人机交互的核心问题
 2. 基于字符操作的I
 
 
+
+
+
+
+
+## spring##
+
+---
+
+1. spring 概念和ioc 入门
+2. spring的IOC操作和aop概念
+3. jdbc Template 和spring管理事务
+4. ssh框架整合开发  
+
+
+
+spring boot 提供的特征：
+
+1. spring boot可以建立独立的Spring应用程序
+2. 内嵌了如Tomcat，Jetty和Undertow这样的容器，也就是说可以直接跑起来，用不着再做部署工作了 
+3. 不需要向xml文件配置
+4. 自动配置Spring
+5. 提供了一些现有的功能，如量度工具，表单数据验证以及一些外部配置这样的一些第三方功能 
+6. 提供的POM可以简化Maven的配置
+7. 
 
